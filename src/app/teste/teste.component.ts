@@ -90,7 +90,7 @@ export class TesteComponent implements OnInit {
     EventEmitterService.get('meClicouEvent').emit({ nome: "Gleison", idade: 25, DataNascimento: "25/03/1998"});
   }
   enviar(){
-    while(this.sub < 15000) {
+
 
     EventEmitterService.get('EnviarTarefa').emit(this.obj);
     EventEmitterService.get('EnviarDados').emit(this.eventos);
@@ -98,7 +98,7 @@ export class TesteComponent implements OnInit {
     this.sub++;
     console.log(this.sub);
 
-    }
+
   }
 
 
